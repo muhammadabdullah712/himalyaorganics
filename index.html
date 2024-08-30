@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Himoganics</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #2c2c2c);
+            background-attachment: fixed;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav, span, a, div {
+            background-color: #333333;
+        }
+
+        header, section {
+            color: #f0f0f0;
+        }
+
+        a {
+            color: #f0f0f0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Adjust the height for a more standard banner size */
+        .swiper-container {
+            height: 50vh; /* Adjusted height for the slider */
+        }
+        
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-slide img {
+            width: 300cm;
+            height: 20cm;
+            object-fit: cover;
+        }
+
+        /* Smooth transition for sliding effect */
+        .swiper-container .swiper-wrapper {
+            transition: transform 1.5s ease;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #f0f0f0;
+        }
+
+        .swiper-pagination-bullet {
+            background: #f0f0f0;
+        }
+
+        .bg-gray-100 {
+            background-color: #333333;
+        }
+
+        .bg-gray-200 {
+            background-color: #555555;
+        }
+
+        .text-gray-900 {
+            color: #f0f0f0;
+        }
+
+        .hover\:text-gray-900:hover {
+            color: #d4af37; /* A golden hue to catch the eye */
+        }
+
+        .btn-primary {
+            background-color: #d4af37;
+            color: #000000;
+            border-radius: 5px;
+            padding: 12px 24px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #b08b2b;
+        }
+
+        .contact-icons a {
+            color: #d4af37;
+            margin-right: 15px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="#home" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="https://i.postimg.cc/bv5mVR6L/Whats-App-Image-2024-08-14-at-1-53-21-PM.jpg" alt="Himalaya Organics Logo" class="w-10 h-10 rounded-full">
+                <span class="ml-3 text-xl">Himoganics</span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+                <a href="#home" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="#about" class="mr-5 hover:text-gray-900">About</a>
+                <a href="#blog" class="mr-5 hover:text-gray-900">Blog</a>
+                <a href="#contact" class="mr-5 hover:text-gray-900">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Slider Section -->
+    <section id="home" class="position-relative overflow-hidden">
+        <div class="swiper main-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://i.postimg.cc/502Rb5Sn/himalya11.jpg" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.postimg.cc/x1x2Hdpx/himalya3.jpg" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.postimg.cc/jdM93F6C/himay2.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="about" class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Sourced from the Himalayas: 100% Pure Shilajit
+                    <br class="hidden lg:inline-block">
+                </h1>
+                <p class="mb-8 leading-relaxed">We've journeyed to the heart of the Himalayas to bring you the purest Shilajit, renowned for its potent benefits and unmatched authenticity. This 100% natural supplement is your key to revitalized energy and holistic wellness, straight from the mountains to your doorstep.</p>
+                <div class="flex justify-center">
+                    <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                        <button class="btn-primary">Shop</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="https://images.healthshots.com/healthshots/en/uploads/2023/07/13100240/Shilajit-1-1600x900.jpg">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.postimg.cc/9fsDh2TM/zakirpansar-com-0x300.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">12g</h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Shilajit by Himalya Organics</h2>
+                <p class="mt-1">PKR 1,250</p>
+                <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                    <button class="btn-primary">Order now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Blog Section -->
+   <!-- Blog Section -->
+<section id="blog" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">What is Shilajit?
+                <br class="hidden lg:inline-block">
+            </h1>
+            <p class="mb-8 leading-relaxed">Harvested from the towering heights of the Himalayas, it takes decades for organic biological matter to be crushed and trapped between rocks at the highest elevations on earth. At these specific atmospheric conditions, the fermented medicinal plants become the raw material, wonder of nature, known as shilajit.
+
+                These rocks are naturally gathered from mountain crevices, purified, then artisanally made into shilajit resin in adherence to the highest of standards.
+
+                As a powerhouse of nutrients, natural elements, and biologically active organic substances, Himoganic's Shilajit is crafted to be the most exclusive ancient super nutrient designed for health and longevity. Infused with the strength of the mountains, it’s a treasure trove of minerals and goodness. Elevate your wellness, naturally.</p>
+        
+    
+
+    <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">All about Shilajit</h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">Stay updated with the latest news, benefits, and information about Shilajit.</p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://biohunza.com/wp-content/uploads/2021/06/Shilajit-Benefits.jpg" alt="blog">
+                    <div class="p-6">
+                        <h2 class="text-xs title-font font-medium text-gray-400 mb-1">BLOG</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Benefits of Shilajit</h1>
+                        <p class="leading-relaxed mb-3">Explore the numerous health benefits of Shilajit, a natural substance known for its powerful rejuvenating properties.</p>
+                        <div class="flex items-center flex-wrap">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3296184/">Read More
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://m.media-amazon.com/images/I/51d0PsLq-zL.jpg" alt="blog">
+                    <div class="p-6">
+                        <h2 class="text-xs title-font font-medium text-gray-400 mb-1">BLOG</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">How to Use Shilajit</h1>
+                        <p class="leading-relaxed mb-3">A comprehensive guide on how to properly use Shilajit for maximum benefits.</p>
+                        <div class="flex items-center flex-wrap">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://www.webmd.com/vitamins/ai/ingredientmono-1697/shilajit">Read More
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.postimg.cc/Cxxh4Nr4/blog3.jpg" alt="blog">
+                    <div class="p-6">
+                        <h2 class="text-xs title-font font-medium text-gray-400 mb-1">BLOG</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The History of Shilajit</h1>
+                        <p class="leading-relaxed mb-3">Discover the rich history and origins of Shilajit, used in traditional medicine for centuries.</p>
+                        <div class="flex items-center flex-wrap">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://en.wikipedia.org/wiki/Shilajit">Read More
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</section>
+
+      <!-- Contact Section -->
+    <section id="contact" class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Get in Touch</h1>
+                <p class="mb-8 leading-relaxed">If you'd like to know more about our products or have any questions, feel free to reach out. We're here to help!</p>
+                <div class="flex justify-center contact-icons">
+                    <a href="https://wa.me/923005813902?text=I'm%20interested%20in%20Product%201" target="_blank">
+                        <img src="https://img.icons8.com/fluent/48/000000/whatsapp.png" alt="WhatsApp" />
+                    </a>
+                    <a href="https://www.instagram.com/himoganic?igsh=MXF0emRyanBxamtubA==" target="_blank">
+                        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram" />
+                    </a>
+                    <a href="mailto:m.abdullahrana@outlook.com">
+                        <img src="https://img.icons8.com/fluent/48/000000/email.png" alt="Email" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <!-- Logo Section -->
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <img src="https://i.postimg.cc/bv5mVR6L/Whats-App-Image-2024-08-14-at-1-53-21-PM.jpg" alt="Himoganics Logo" class="w-10 h-10 rounded-full">
+              <span class="ml-3 text-xl">Himoganics</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Pure Shilajit from the Himalayas for your wellness.</p>
+          </div>
+      
+          <!-- Footer Links -->
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">PRODUCTS</h2>
+              <nav class="list-none mb-10">
+                <li><a class="text-gray-600 hover:text-gray-800" href="#home">Home</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#about">About</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#blog">Blog</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#contact">Contact</a></li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUPPORT</h2>
+              <nav class="list-none mb-10">
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">FAQ</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Shipping Info</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Returns</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Privacy Policy</a></li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COMPANY</h2>
+              <nav class="list-none mb-10">
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">About Us</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Careers</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Press</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Contact</a></li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">FOLLOW US</h2>
+              <nav class="list-none mb-10">
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Facebook</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Twitter</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">Instagram</a></li>
+                <li><a class="text-gray-600 hover:text-gray-800" href="#">LinkedIn</a></li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Footer Bottom -->
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Himoganics —
+              <a href="https://www.instagram.com/himoganic?igsh=MXF0emRyanBxamtubA==" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@himoganics</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500" href="https://www.facebook.com/himoganics" target="_blank">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500" href="https://twitter.com/himoganics" target="_blank">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500" href="https://www.instagram.com/himoganic?igsh=MXF0emRyanBxamtubA==" target="_blank">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500" href="m.abdullahrana@outlook.com">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.main-swiper', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            effect: 'fade', /* Adds a fade effect */
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 1500, /* Smooth transition speed */
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
